@@ -12,56 +12,59 @@
         height: 200px;
         width: 200px;
     }
-
-    /*p {
-    background-color: rgb(255,0,0);
-}*/
+    marquee {
+      font-size: 30px;
+      font-family: Verdana;
+      font-weight: bold;
+    }
     </style>
+
   </head>
 
   <body>
     <h1>Zoe</h1>
     <nav>
-     <a href="#zoe">Zoe</a>
-     <a href="#Maddie">Maddie</a>
-     <a href="#allan">Allan</a>
-     <a href="#jess">Jess</a>
+     <a href="https://huffmanm96.github.io/ICE1/">Maddie</a>
+     <a href="https://allanmc0913.github.io/ICE1/ICE1.html">Allan</a>
+     <a href="https://jesbro.github.io/ICE1/index">Jess</a>
    </nav><br>
    <img src="images/sketch.jpg" alt="sketch of page"/>
    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg" alt="bear"/>
    <img src="images/logo.png" alt="umsi loog"/><br>
    <p>This is the first ICE (in class excercise) over HTML</p>
-   <p>
-     Answers to exercise questions:
+
+     <p>Answers to exercise questions:</p>
      <ol>
        <li value="2">. Comparing between Safari, Chrome, and Firefox, the text is a lot smaller on Safari. Chrome and Firefox seemed to be identical with similar font sizes.
        Chrome and Firefox only differend in the color of the video controls, but they both had video controls and the DOB text formatting. Safari did not show
        video controls, nor did it show the DOB text formatting.</li>
        <li value="3">When you click on the text nothing happens. This is a problem because radio buttons have a small clickable area, so it is difficult to click it precicely.
        Making the text clickable as well will increase the usability.</li>
-       <li value="7"></li>
+       <li value="7">No new issues were found.</li>
     </ol>
-   </p>
+
 
     <form>
   		Name:
-  		<input type="text" name="name" id = "name"></label><br>
+    <label><input type="text" name="name" id = "name"></label><br>
   		<label for="dob">DOB:</label>
   		<input type="date" name="DOB" id = "dob"><br>
 
   		Please enter your choice of snack:<br>
-  		<input type="radio" name="snack" value="pizza"> Pizza<br>
-    		<input type="radio" name="snack" value="donut"> Donut<br>
-    		<input type="radio" name="snack" value="vegan"> Vegan Stuff<br>
+  		<label><input type="radio" name="snack" value="pizza"> Pizza</label><br>
+    		<label><input type="radio" name="snack" value="donut"> Donut</label><br>
+    		<label><input type="radio" name="snack" value="vegan"> Vegan Stuff</label><br>
 
     		Please enter your choice of drink:<br>
-  		<input type="radio" name="snack" value="coffee"> Coffee<br>
-    		<input type="radio" name="snack" value="tea"> Tea<br>
-    		<input type="radio" name="snack" value="water"> Water<br>
+  		<label><input type="radio" name="drink" value="coffee"> Coffee</label><br>
+    		<label><input type="radio" name="drink" value="tea"> Tea</label><br>
+    		<label><input type="radio" name="drink" value="water"> Water</label><br>
     </form><br>
 
     <video src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4"
     height="240" width="320" controls>Video not supported</video>
-    <marquee><font size="30" face="Verdana"><b>Thank you for visiting Zoe's site!</b></font></marquee>
+    <!-- <marquee><font size="30" face="Verdana"><b>Thank you for visiting Zoe's site!</b></font></marquee> -->
+    <marquee>Thank you for visiting Zoe's site!</marquee>
   </body>
+
 </html>
