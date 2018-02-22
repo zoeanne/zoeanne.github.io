@@ -1,8 +1,81 @@
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 650px) {
+  .top-nav ul{
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    margin-left: 30%;
+  }
   .top-nav ul li{
-    display: inline-block;
+    float: left;
   }
-  body{
-    background-color: yellow;
+  .top-nav ul li, .menu-icon{
+  	border-top: 1px solid red;
   }
+  .top-nav ul li a{
+    display: block;
+    padding: 1em;
+    /* text-align: center; */
+    /* width: auto; */
+    /* margin-left: 100px; */
+    /* margin-right: auto; */
+  }
+  #main-content{
+    margin-top: 100px;
+  }
+
+/*-----IMAGES PAGE ------*/
+/* .main-content-crafts{
+	diplay: inline;
+} */
+  /* .crafts{
+    display: inline;
+} */
+.photo-cell{
+	display: inline;
+}
+/* .photo-cell img.resp-img{
+    display:inline;
+
+} */
+#alterthis{
+    display:inline;
+    max-width: 46%;
+    margin-top: 20px;
+    /* vertical-align: left; */
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+  .top-nav ul{
+      display: flex;
+    float: right;
+  }
+  .top-nav ul li, .menu-icon{
+  	border: none;
+  }
+  .logo{
+    float: left;
+  }
+  #main-content{
+    margin-top: 50px;
+  }
+
+/*-----IMAGES PAGE ------*/
+.photo-cell{
+	display: inline;
+}
+.photo-cell img{
+  display: inline;
+  max-width: 40%;
+}
+#alterthis{
+    display:inline;
+    max-width: 19%;
+    /* vertical-align: left; */
+}
+
+
 }
