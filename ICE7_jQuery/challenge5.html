@@ -11,12 +11,12 @@
 		$(document).ready(function() {
 			const imagDefaultText = $('#image').prop('textContent');
 
-			$('.preview').mouseenter(function() {
+			$('.preview').on('mouseenter focus', function() {
 				$('#image').css('backgroundImage', `url(${$(this).prop('src')})`);
 				$('#image').prop('textContent', $(this).prop('alt'));
 			});
 
-			$('.preview').mouseleave(function() {
+			$('.preview').on('mouseleave blur', function() {
 				$('#image').css('background-image', '');
 				$('#image').prop('textContent', imagDefaultText);
 			});
@@ -93,14 +93,14 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex="1"
 			alt = "Styling with a Bandana"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
 			>
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" tabindex="1"
 			alt = "With My Boy"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
 
