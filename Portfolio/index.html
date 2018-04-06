@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>New Barbara Love</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
     <link rel="stylesheet" href="Stylesheets/main.css">
@@ -18,8 +20,8 @@
 
       <div class="header1">
         <h1><a href="index.html">BARBARA LOVE</a></h1>
-        <a aria-label="Facebook" href="#" class="fa fa-facebook"></a>
-        <a aria-label="Email" href="#" class="fa fa-envelope"></a>
+        <a aria-label="Facebook" href="https://www.facebook.com/guardianangelsbymyside/" class="fa fa-facebook" target="_blank"></a>
+        <a aria-label="Email" href="mailto:angelsappeared@aol.com" class="fa fa-envelope" target="_blank"></a>
       </div>
 
       <div class="header2">
@@ -30,8 +32,8 @@
             <li><a href="bio.html">Bio</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="bookclub.html">Book Club</a></li>
-            <li><a aria-label="Facebook" href="#" class="fa fa-facebook"></a></li>
-            <li><a aria-label="Email" href="#" class="fa fa-envelope"></a></li>
+            <li><a aria-label="Facebook" href="https://www.facebook.com/guardianangelsbymyside/" class="fa fa-facebook" target="_blank"></a></li>
+            <li><a aria-label="Email" href="mailto:angelsappeared@aol.com" class="fa fa-envelope" target="_blank"></a></li>
           </ul>
         </nav>
       </div>
@@ -39,9 +41,41 @@
 
       <div class="main1">
         <img id="book" src="Images/book.gif" alt="Guardian Angels By My Side Book Cover">
-        <p>BUY THE BOOK</p>
-        <p>Buy from button</p>
+      <p></p>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">BUY THE BOOK</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="https://www.westbowpress.com/Bookstore/BookSearchResults.aspx?ISBN=9781449707538&image1.x=39&image1.y=8" target="_blank">WestBow Press</a>
+            <a href="https://www.barnesandnoble.com/w/guardian-angels-by-my-side-barbara-love/1029536845" target="_blank">Barnes & Noble</a>
+            <a href="https://www.amazon.com/Guardian-Angels-Side-Encounters-Interventions/dp/144970753X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1291054236&sr=8-3" target="_blank">Amazon</a>
+            <a href="https://www.amazon.com/Guardian-Angels-Side-Interventions-ebook/dp/B004CRST1O/ref=sr_1_3?ie=UTF8&qid=1291054236&sr=8-3" target="_blank">Kindle</a>
+          </div>
+        </div>
+        <script>
+          /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+      </script>
+
       </div>
+
       <div class="main2">
         <h1>Guardian Angels By My Side: True Stories of Angelic Encounters and Divine Interventions</h1>
         <h2>BY BARBARA LOVE</h2>
@@ -53,8 +87,8 @@
 
 
       <footer class="footer">
-        <a aria-label="Facebook" href="#" class="fa fa-facebook"></a>
-        <a aria-label="Email" href="#" class="fa fa-envelope"></a>
+        <a aria-label="Facebook" href="https://www.facebook.com/guardianangelsbymyside/" class="fa fa-facebook" target="_blank"></a>
+        <a aria-label="Email" href="mailto:angelsappeared@aol.com" class="fa fa-envelope" target="_blank"></a>
         <p>Copyright Info</p>
         <p>Publisher Legal Info</p>
       </footer>
