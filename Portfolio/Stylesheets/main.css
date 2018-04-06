@@ -8,6 +8,21 @@
   background-color: #EFF7F9;
 } */
 
+/* Global Defaults */
+html, body {
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+
+
+.site > *{
+  padding: 50px;
+}
+
+.site > header{
+  padding:0px;
+}
 h1 {
   font-family: 'Muli', sans-serif;
   font-weight:400;
@@ -30,7 +45,7 @@ p {
 
 .site {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: auto 120px auto 0px;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 0px;
   /* grid-row-gap: 50px;
@@ -40,6 +55,7 @@ p {
     "header1 header2"
     "main1 main2"
     "footer footer";
+  /* justify-content: space-evenly; */
 }
 
 .banner {
@@ -51,7 +67,7 @@ p {
 .header1 {
   grid-area: header1;
   align-self: center;
-  padding-left: 100px;
+  /* padding-left: 100px; */
 
 }
 
@@ -62,20 +78,19 @@ p {
   /* padding-right: 50px; */
 }
 
+
 .main1 {
   grid-area: main1;
-  /* justify-self: center; */
   background-color: #EFF7F9;
-  padding-left: 300px;
+  padding-left: 200px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .main2 {
   grid-area: main2;
-  /* justify-self: center; */
   background-color: #EFF7F9;
-  padding-right: 300px;
+  padding-right: 200px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -111,6 +126,7 @@ a:hover {
 
 a.current {
   opacity: 0.7;
+  border-bottom: 1px solid;
 }
 
 div h1 a:hover {
@@ -156,15 +172,78 @@ header img {
       background-size: cover;
 }
 
+.footer a.fa.fa-envelope {
+  display: none;
+}
+.footer a.fa.fa-facebook {
+  display: none;
+}
 
-@media screen and (max-width: 800px) {
-  .site {
-    /* grid-template-columns: 1fr 3fr; */
-    grid-template-areas:
-      "banner"
-      "header1"
-      "header2"
-      "main1"
-      "main2"
-      "footer";
-  }
+.header1 a.fa.fa-envelope {
+  display: none;
+}
+.header1 a.fa.fa-facebook {
+  display: none;
+}
+
+#headshot {
+  width: auto;
+  max-width: 550px;
+  height: auto;
+  max-height: 600px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #00253d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #00253d;
+    opacity: 0.7;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #00253d; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    opacity: 0.7;
+}

@@ -2,33 +2,81 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Bio - Barbara Love</title>
+    <title>New Barbara Love - Bio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
     <link rel="stylesheet" href="Stylesheets/main.css">
+    <link rel="stylesheet" href="Stylesheets/queries.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
+    <div class="site">
 
-  <nav>
-    <a href="index.html">Barbara Love</a> |
-    <a href="bio.html">Bio</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="events.html">Events</a>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-envelope"></a>
-  </nav>
+      <header class="banner">
+        <img src="Images/header.jpg" alt="">
+      </header>
 
-  <h1>Author Bio</h1>
-  <img src="Images/headshot.jpg" alt="Barbara Love headshot">
-  <p>
-    For years I worked in Advertising, Marketing, and in Real Estate. Along the way, I studied Spirituality, becoming certified as a Clinical Master Hypnotherapist which opened my heart and mind to the possibilities that lies within the power of our subconscious minds. The possibilities are endless when we use the power of our subconscious to help us achieve whatever it is we want or more importantly NEED to learn in our lives. Using this wonderful tool within us can help us in leaps and bounds with our spiritual development IF we are willing to allow it!  I've learned that when we tune within ourselves, into our own hearts and minds, God can do wondrous works if we allow Him to use us for His purpose....and I believe this also involves our duty to love and serve others. Through these experiences, I have met the most amazing good hearted people also on a spiritual quest to help others.  God has much more planned for my life and I'm excited to see where He leads me and for the wonderful new souls I will be meeting along this journey before me.
-  </p>
-  <p>~Blessings and Love I send to you as you continue along your own Spiritual journey.~</p>
+      <div class="header1">
+        <h1><a href="index.html">BARBARA LOVE</a></h1>
+        <a aria-label="Facebook" href="#" class="fa fa-facebook"></a>
+        <a aria-label="Email" href="#" class="fa fa-envelope"></a>
+      </div>
 
-  <footer>
-    <p>Copyright Info</p>
-    <p>Publisher Legal Info</p>
-  </footer>
+      <div class="header2">
+        <nav>
+          <ul>
+            <!-- <li><a href="index.html"><h1>Barbara Love</h1></a></li> -->
+            <li><a href="index.html">Book</a></li>
+            <li><a href="bio.html" class="current">Bio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="bookclub.html">Book Club</a></li>
+            <li><a aria-label="Facebook" href="#" class="fa fa-facebook"></a></li>
+            <li><a aria-label="Email" href="#" class="fa fa-envelope"></a></li>
+          </ul>
+        </nav>
+      </div>
 
+    <div class="main1">
+      <img id="headshot" src="Images/headshot.jpg" alt="Barbara Love headshot">
+    </div>
+    <div class="main2">
+      <h1>Author Bio</h1>
+      <h2>BARBARA LOVE</h2>
+      <p>
+        For years I worked in Advertising, Marketing, and in Real Estate. Along the way, I studied Spirituality, becoming certified as a Clinical Master Hypnotherapist which opened my heart and mind to the possibilities that lies within the power of our subconscious minds. The possibilities are endless when we use the power of our subconscious to help us achieve whatever it is we want or more importantly NEED to learn in our lives. Using this wonderful tool within us can help us in leaps and bounds with our spiritual development IF we are willing to allow it!  I've learned that when we tune within ourselves, into our own hearts and minds, God can do wondrous works if we allow Him to use us for His purpose....and I believe this also involves our duty to love and serve others. Through these experiences, I have met the most amazing good hearted people also on a spiritual quest to help others.  God has much more planned for my life and I'm excited to see where He leads me and for the wonderful new souls I will be meeting along this journey before me.
+      </p>
+      <p>~Blessings and Love I send to you as you continue along your own Spiritual journey.~</p>
+    </div>
+
+
+
+      <footer class="footer">
+        <a aria-label="Facebook" href="#" class="fa fa-facebook"></a>
+        <a aria-label="Email" href="#" class="fa fa-envelope"></a>
+        <p>Copyright Info</p>
+        <p>Publisher Legal Info</p>
+      </footer>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    </div>
   </body>
 </html>
